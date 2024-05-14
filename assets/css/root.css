@@ -150,6 +150,9 @@
     --lh-83: 83px;
     --lh-86: 86px;
     --lh-90: 90px;
+    --lh-150: 150%;
+    --lh-120: 120%;
+    --lh-110: 110%;
     --lh-96: 96px;
     --lh-100: 100px;
     --lh-188: 188px;
@@ -394,6 +397,18 @@
 
 .lh-54 {
     line-height: var(--lh-54);
+}
+
+.lh-150 {
+    line-height: var(--lh-150);
+}
+
+.lh-120 {
+    line-height: var(--lh-120);
+}
+
+.lh-110 {
+    line-height: var(--lh-110);
 }
 
 .lh-64 {
@@ -662,7 +677,7 @@ a {
         width: 100%;
         top: 0;
         left: -100%;
-        background: var(--text_lg);
+        background: var(--black-color);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -676,11 +691,29 @@ a {
     }
 
     .menuicon:hover span {
-        background: var(--color-sky-dark);
+        background: var(--chimp_text_color);
     }
 
-    .btn_change {
-        background: var(--border-color) !important;
+    .d_max_sm_prop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .company_box {
+        max-width: 100%;
+        min-height: 87px;
+    }
+
+    .max_w_sub_text {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992.9px) {
+    .position-lg-abs {
+        position: unset;
     }
 }
 
@@ -691,9 +724,180 @@ a {
         transform: translate(-50%, -50%);
     }
 
+    .takenomic_box {
+        padding: 30px 30px 30px 30px;
+    }
+
     .after_image_2::after {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .wh_chimp_img {
+        max-width: 100%;
+        min-height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .fs_media_hero_heading {
+        font-size: var(--fs-50);
+        line-height: var(--lh-150);
+    }
+
+    /* spacing between sections */
+
+    .py_about {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .py_roadmap {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .py_team {
+        padding-top: 31px;
+        padding-bottom: 100px;
+    }
+
+    .py_partner {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    .py_partner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .py_takenomics {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .py_faq {
+        padding-bottom: 100px;
+    }
+
+    /* padding in all the sections */
+
+    .pb_media_text_road {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .wh_chimp_img {
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .team_box {
+        padding: 19px 12px 19px 12px;
+    }
+
+    .fs_heading_media {
+        font-size: var(--fs-40);
+        line-height: var(--lh-150);
+    }
+
+    .fs_media_hero_heading {
+        font-size: var(--fs-36);
+        line-height: var(--lh-150);
+    }
+
+    .fs_sub_text {
+        font-size: var(--fs-14);
+        line-height: var(--lh-150);
+    }
+
+    .fs_sub_headings {
+        font-size: 16px;
+        line-height: var(--lh-150);
+    }
+
+    .after_image::after {
+        width: 310px;
+        height: 95px;
+    }
+
+    .svg_roadmap_box {
+        padding: 5px;
+    }
+
+    .after_image_2::after {
+        width: 310px;
+        height: 95px;
+    }
+
+    .fs_sub_heading_token {
+        font-size: var(--fs-20);
+        line-height: var(--lh-150);
+    }
+
+    .takenomic_box {
+        padding: 24px;
+    }
+
+    .px_12px {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    /* spacing between sections */
+
+    .py_about {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .py_roadmap {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .py_team {
+        padding-top: 31px;
+        padding-bottom: 50px;
+    }
+
+    .py_partner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .py_partner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .py_takenomics {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .py_faq {
+        padding-bottom: 50px;
+    }
+
+    /* padding between sections or text */
+
+    .mt_media_team {
+        margin-top: 25px;
+    }
+
+    .pb_media_text_part {
+        padding-bottom: 0;
+    }
+
+    .mt_media_col {
+        margin-top: 25px;
+    }
+
+    .pb_media_text {
+        padding-bottom: 30px;
     }
 }

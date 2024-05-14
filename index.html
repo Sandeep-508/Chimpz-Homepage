@@ -28,18 +28,20 @@
         <nav class="bac_color_navBar py-4">
             <div class="container_hero">
                 <div class="d-flex align-items-sm-center justify-content-between">
-                    <div class="cursor w_h_changes d-sm-flex d-none align-items-center justify-content-center">
+                    <div class="cursor w_h_changes d-flex align-items-center justify-content-center">
                         <img src="./assets/images/SVG/nav_title.svg" alt="chimpz title" class="w-100 h-100">
                     </div>
                     <div class="d-flex align-items-center gap_50px gap_media max_lg_view gap_betw">
-                        <div class="d-flex align-items-center gap_media_navTabs">
-                            <a href="#home" class="fm_fira fw-400 fs-16 lh-24 text-white nav_link">Home</a>
-                            <a href="#about" class="fm_fira fw-400 fs-16 lh-24 text-white nav_link">About</a>
-                            <a href="#help" class="fm_fira fw-400 fs-16 lh-24 text-white nav_link">How to Buy</a>
-                            <a href="#test" class="fm_fira fw-400 fs-16 lh-24 text-white nav_link">Takenomics</a>
-                            <a href="#test" class="fm_fira fw-400 fs-16 lh-24 text-white nav_link">Roadmap</a>
+                        <div class="d-flex align-items-center gap_media_navTabs d_max_sm_prop">
+                            <a href="#home" class="fm_fira fw-400 fs-16 lh-24 opac_70 text-white nav_link">Home</a>
+                            <a href="#about" class="fm_fira fw-400 fs-16 lh-24 opac_70 text-white nav_link">About</a>
+                            <a href="#buy" class="fm_fira fw-400 fs-16 lh-24 opac_70 text-white nav_link">How to Buy</a>
+                            <a href="#Tokenomics"
+                                class="fm_fira fw-400 fs-16 lh-24 opac_70 text-white nav_link">Takenomics</a>
+                            <a href="#Roadmap"
+                                class="fm_fira fw-400 fs-16 lh-24 opac_70 text-white nav_link">Roadmap</a>
                         </div>
-                        <div class="d-flex align-items-center gap_media_navItems">
+                        <div class="d-flex align-items-center gap_media_navItems d_max_sm_prop">
                             <div class="d-flex align-items-center gap-2">
                                 <a href="#" class="svg_box_nav_bar d-flex align-items-center justify-content-center">
                                     <img src="./assets/images/SVG/discord_nav_bar.svg" alt="discord image">
@@ -51,7 +53,12 @@
                                     <img src="./assets/images/SVG/twitter_nav_bar.svg" alt="twitter_nav_bar image">
                                 </a>
                             </div>
-                            <button class="Btn_navBar fm_dela fw-400 fs-16 lh-23 text-white">Buy Now</button>
+                            <ul>
+                                <li class="btn Btn_navBar fm_dela fw-400 fs-16 lh-23 text-white">
+                                    Buy Now
+                                    <span></span><span></span><span></span><span></span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="d-lg-none d-flex align-items-center gap_30px">
@@ -65,65 +72,101 @@
             </div>
         </nav>
 
-        <section class="flex-grow-1 d-flex align-items-center justify-content-center flex-column position-relative">
+        <section class="flex-grow-1 d-flex align-items-center justify-content-center flex-column position-relative"
+            id="home">
             <div class="w-100 pos_bottom_layer_hero">
                 <img src="./assets/images/PNG/bottom_hero_layer.png" alt="bottom layer hero section" class="w-100">
             </div>
             <div class="container_diff_hero w-100">
                 <div class="row">
-                    <div class="col-lg-6 d-flex align-items-start back_col_lg justify-content-center flex-column">
-                        <p class="fm_robo fs-16 fw-600 lh-24 text-white">APE TOGETHER STRONG</p>
-                        <p class="fm_exo fw-700 fs-64 lh-76 text-white"><span class="text_color_chimp">CHIMPZ</span> A
-                            Green Revolution for Your Wallet</p>
-                        <p class="fm_fira fw-400 fs-16 lh-150 text-white opac_90">Dedicated to all the chimps around the
-                            world, we have
-                            created a safe haven for all the
-                            risk-takers and degenerates who
-                            have their helmets ready for the next moon landing.</p>
+                    <div
+                        class="col-lg-7 d-flex align-items-lg-start align-items-center back_col_lg justify-content-center flex-column padding_col">
+                        <p class="fm_robo fs-16 fw-600 lh-24 text-white fs_sub_text text-lg-start text-center">APE
+                            TOGETHER STRONG</p>
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <p
+                                class="fm_exo fw-700 fs-64 lh-76 text-white fs_media_hero_heading  text-lg-start text-center">
+                                <span class="text_color_chimp">CHIMPZ</span> A
+                                Green Revolution for Your Wallet
+                            </p>
+                            <p
+                                class="fm_fira fw-400 fs-16 lh-150 text-white opac_90 fs_sub_text  text-lg-start text-center">
+                                Dedicated
+                                to all the
+                                chimps around the
+                                world, we have
+                                created a safe haven for all the
+                                risk-takers and degenerates who
+                                have their helmets ready for the next moon landing.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-5 d-flex align-items-center justify-content-center position-relative">
                         <img src="./assets/images/SVG/hero_col_image.svg" alt="chimp with space suit"
-                            class="wh_chimp_img">
+                            class="wh_chimp_img position-lg-abs pos_hero_img">
                     </div>
                 </div>
             </div>
         </section>
     </header>
 
-    <main>
+    <main class="overflow-hidden">
 
         <!-- about us -->
 
-        <section class="py_about sec_back_clr">
+        <section class="py_about sec_back_clr -mt-2" id="about">
             <div class="container_hero">
                 <div class="row">
                     <div class="col-lg-7">
                         <img src="./assets/images/PNG/about_us_image.png" alt="about us image" class="w-100 h-100">
                     </div>
-                    <div class="col-lg-5 d-flex align-items-start flex-column justify-content-center">
-                        <p class="fm_dela fw-400 fs-48 lh-68 text-white">About Us</p>
-                        <p class="fm_fira fw-400 fs-16 lh-26 text-white opac_70">Our mission is to empower artists,
-                            creators, and
-                            collectors by providing a secure and
-                            innovative platform for the
-                            creation, exchange, and ownership of NFTs. We believe in the democratization of art and
-                            culture through decentralized
-                            technology, and we're committed.</p>
-                        <p class="fm_fira fw-400 fs-16 lh-26 text-white opac_70">Non-Fungible Tokens (NFTs) have
-                            revolutionized the way we think about ownership and authenticity. Each NFT represents a
-                            unique digital asset, whether it's a piece of digital art, music, virtual real estate, or
-                            any other form of digital
-                            content. NFTs enable creators to maintain control over their work and ensure that
-                            collectors.</p>
+                    <div
+                        class="col-lg-5 d-flex align-items-lg-start align-items-center flex-column justify-content-center mt-lg-0 mt-3">
+                        <p class="fm_dela fw-400 fs-48 lh-68 text-white fs_heading_media">About Us</p>
+                        <div class="d-flex-align-items-center justify-content-center">
+                            <p
+                                class="fm_fira fw-400 fs-16 lh-26 text-white opac_70 fs_sub_text max_w_sub_text text-lg-start text-center">
+                                Our
+                                mission is to
+                                empower
+                                artists,
+                                creators, and
+                                collectors by providing a secure and
+                                innovative platform for the
+                                creation, exchange, and ownership of NFTs. We believe in the democratization of art and
+                                culture through decentralized
+                                technology, and we're committed.</p>
+                            <p
+                                class="fm_fira fw-400 fs-16 lh-26 text-white opac_70 fs_sub_text max_w_sub_text text-lg-start text-center">
+                                Non-Fungible Tokens
+                                (NFTs)
+                                have
+                                revolutionized the way we think about ownership and authenticity. Each NFT represents a
+                                unique digital asset, whether it's a piece of digital art, music, virtual real estate,
+                                or
+                                any other form of digital
+                                content. NFTs enable creators to maintain control over their work and ensure that
+                                collectors.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- How to Buy -->
+
+        <!-- <section class="sec_back_clr -mt-2" id="buy">
+            <div class="container_hero">
+                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center mb-0 fs_heading_media">How to Buy</p>
+            </div>
+        </section> -->
+
         <!-- roadmap -->
 
-        <section class="py_roadmap sec_back_clr">
+        <section class="py_roadmap sec_back_clr -mt-2" id="Roadmap">
             <div class="container_hero">
+                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center mb-0 fs_heading_media pb_media_text_road">
+                    Roadmap
+                </p>
                 <div class="row">
                     <div class="col-xl-4 col-lg-6">
                         <div
@@ -163,7 +206,7 @@
                             <img src="./assets/images/PNG/dots_roadmap.png" alt="dots roadmap seciton" class="wh_dots">
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6">
+                    <div class="col-xl-4 col-lg-6 mt-md-0 mt-5">
                         <div
                             class="d-flex align-items-center justify-content-center gap_bet_text_img after_image_2 padding_box_road">
                             <div class="d-flex align-items-center justify-content-center svg_roadmap_box">
@@ -202,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 mt-lg-0 mt-5">
                         <div
                             class="d-flex align-items-center justify-content-center gap_bet_text_img after_image padding_box_road">
                             <div class="d-flex align-items-center justify-content-center svg_roadmap_box">
@@ -248,16 +291,18 @@
 
         <section class="py_team team_bg_img -mt-2">
             <div class="container_hero d-flex align-items-center justify-content-center flex-column">
-                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center">Team</p>
+                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center fs_heading_media">Team</p>
                 <div class="team_box mt_media_team">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 d-flex align-items-center justify-content-center">
                             <img src="./assets/images/PNG/team_image_col.png" alt="">
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 d-flex align-items-center justify-content-center flex-column">
                             <p class="fm_dela fw-400 fs-24 lh-150 text-white">Eazy <span
                                     class="fm_fira fw-400 fs-16 lh-150 text-white text_color_team">owner</span></p>
-                            <p class="fm_fira fw-400 fs-16 lh-26 text-white opac_70">Rhoncus dictum in placerat eget
+                            <p class="fm_fira fw-400 fs-16 lh-26 text-white opac_70 fs_sub_text text-center">Rhoncus
+                                dictum in
+                                placerat eget
                                 cursus purus fermentum fermentum. Tortor ornare mauris at gravida dictum magna. Velit
                                 viverra amet convallis sagittis imperdiet ac volutpat potenti sodales. Sit amet quis
                                 congue massa mattis arcu at odio.</p>
@@ -274,7 +319,8 @@
                 <img src="./assets/images/PNG/partner_bottom_layer.png" alt="random image" class="w-100">
             </div>
             <div class="container_partner">
-                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center pb_media_text_part">Partners</p>
+                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center pb_media_text_part fs_heading_media">
+                    Partners</p>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 mt_media_col">
                         <div class="company_box d-flex align-items-center justify-content-center">
@@ -322,27 +368,35 @@
 
         <!-- teakenommics -->
 
-        <section class="py_takenomics sec_back_clr position-relative">
+        <section class="py_takenomics sec_back_clr position-relative -mt-2" id="Tokenomics">
             <div class="position-absolute layer_partner_pos">
                 <img src="./assets/images/PNG/partner_bottom_layer.png" alt="random image" class="w-100">
             </div>
             <div class="container_hero">
-                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center pb_media_text">Tokenomics</p>
-                <div class="row">
-                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center pb_media_text fs_heading_media">Tokenomics
+                </p>
+                <div class="row flex-lg-row flex-column-reverse">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center mt-lg-0 mt-3">
                         <div class="takenomic_box">
-                            <div class="d-flex align-items-center">
-                                <p class="fm_dela fw-400 fs-24 lh-35 text-white mb-0 mb-2">Total Supply -</p>
-                                <p class="fm_dela fw-400 fs-20 lh-28 text-white opac_70 mb-0">1,000,000,000</p>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <p class="fm_dela fw-400 fs-24 lh-35 text-white mb-0 fs_sub_headings">Total Supply
+                                </p>
+                                <p class="fm_dela fw-400 fs-24 lh-35 text-white mb-0">-</p>
+                                <p class="fm_dela fw-400 fs-20 lh-28 text-white opac_70 mb-0 fs_sub_headings">
+                                    1,000,000,000</p>
                             </div>
-                            <p class="fm_fira fw-400 fs-16 lh-24 text-white opac_70">3% Buy 3% Sell<br>
+                            <p class="fm_fira fw-400 fs-16 lh-24 text-white opac_70 fs_sub_text">3% Buy 3% Sell<br>
                                 (2% Marketing/Development and 1% Reflections)</p>
-                            <p style="color: #EAA763;" class="fm_dela fw-400 fs-24 lh-35 mb-0">10% Cex LP + Uniswap<br>
+                            <p style="color: #EAA763;" class="fm_dela fw-400 fs-24 lh-35 mb-0 fs_sub_headings">10% Cex
+                                LP + Uniswap<br>
                                 V3
                                 LP<br></p>
-                            <p style="color: #F7D567;" class="fm_dela fw-400 fs-24 lh-35 mb-0">15% Liquidity</p>
-                            <p style="color: #B73537;" class="fm_dela fw-400 fs-24 lh-35 mb-0">30% Burned</p>
-                            <p style="color: #27603D;" class="fm_dela fw-400 fs-24 lh-35 mb-0">45% Presale</p>
+                            <p style="color: #F7D567;" class="fm_dela fw-400 fs-24 lh-35 mb-0 fs_sub_heading_token">15%
+                                Liquidity</p>
+                            <p style="color: #B73537;" class="fm_dela fw-400 fs-24 lh-35 mb-0 fs_sub_heading_token">30%
+                                Burned</p>
+                            <p style="color: #27603D;" class="fm_dela fw-400 fs-24 lh-35 mb-0 fs_sub_heading_token">45%
+                                Presale</p>
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex align-items-center justify-content-center">
@@ -354,95 +408,108 @@
 
         <!-- faq -->
 
-        <section class="py_faq sec_back_clr">
+        <section class="py_faq sec_back_clr -mt-2">
             <div class="container_accordion">
+                <p class="fm_dela fw-400 fs-48 lh-68 text-white text-center mb-0 fs_heading_media pb_media_text_road">
+                    FAQ's
+                </p>
                 <div class="accordion">
                     <div class="accoridon_items brdr">
                         <div class="d-flex align-items-center justify-content-between cursor click_btn gap-sm-0 gap-4">
-                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white">What are the $CHIMPZ
+                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white color_change">What are
+                                the $CHIMPZ
                                 token details?
                             </p>
                             <span class="svg_icon">
                                 <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg" class="svg_fill">
                                     <path
                                         d="M0.938726 1.43185L9.90948 10.1765C10.067 10.3301 10.2784 10.416 10.4984 10.416C10.7185 10.416 10.9298 10.3301 11.0873 10.1765L20.0615 1.43185C20.135 1.3603 20.1934 1.27477 20.2332 1.18028C20.2731 1.0858 20.2937 0.984281 20.2937 0.881724C20.2937 0.779169 20.2731 0.677651 20.2332 0.583166C20.1934 0.488681 20.135 0.403143 20.0615 0.331599C19.9108 0.184412 19.7085 0.10201 19.4979 0.10201C19.2872 0.10201 19.0849 0.184412 18.9342 0.331599L10.4984 8.55479L2.06429 0.331599C1.91368 0.184916 1.71175 0.102834 1.50151 0.102834C1.29127 0.102834 1.08934 0.184916 0.938726 0.331599C0.865247 0.403143 0.806844 0.488681 0.766966 0.583166C0.727088 0.677651 0.706543 0.779169 0.706543 0.881724C0.706543 0.984281 0.727088 1.0858 0.766966 1.18028C0.806844 1.27477 0.865247 1.3603 0.938726 1.43185Z"
                                         fill="white" />
                                 </svg>
                             </span>
                         </div>
-                        <p class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem">
+                        <p
+                            class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem color_change_2 fs_sub_text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur
                             exercitationem officiis, quibusdam alias nihil sed in autem pariatur ex?
                         </p>
                     </div>
                     <div class="accoridon_items brdr mt-4">
                         <div class="d-flex align-items-center justify-content-between cursor click_btn gap-sm-0 gap-4">
-                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white">What is Chimpz?</p>
+                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white color_change">What is
+                                Chimpz?</p>
                             <span class="svg_icon">
                                 <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg" class="svg_fill">
                                     <path
                                         d="M0.938726 1.43185L9.90948 10.1765C10.067 10.3301 10.2784 10.416 10.4984 10.416C10.7185 10.416 10.9298 10.3301 11.0873 10.1765L20.0615 1.43185C20.135 1.3603 20.1934 1.27477 20.2332 1.18028C20.2731 1.0858 20.2937 0.984281 20.2937 0.881724C20.2937 0.779169 20.2731 0.677651 20.2332 0.583166C20.1934 0.488681 20.135 0.403143 20.0615 0.331599C19.9108 0.184412 19.7085 0.10201 19.4979 0.10201C19.2872 0.10201 19.0849 0.184412 18.9342 0.331599L10.4984 8.55479L2.06429 0.331599C1.91368 0.184916 1.71175 0.102834 1.50151 0.102834C1.29127 0.102834 1.08934 0.184916 0.938726 0.331599C0.865247 0.403143 0.806844 0.488681 0.766966 0.583166C0.727088 0.677651 0.706543 0.779169 0.706543 0.881724C0.706543 0.984281 0.727088 1.0858 0.766966 1.18028C0.806844 1.27477 0.865247 1.3603 0.938726 1.43185Z"
                                         fill="white" />
                                 </svg>
                             </span>
                         </div>
-                        <p class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem">
+                        <p
+                            class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem color_change_2 fs_sub_text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur
                             exercitationem officiis, quibusdam alias nihil sed in autem pariatur ex?
                         </p>
                     </div>
                     <div class="accoridon_items brdr mt-4">
                         <div class="d-flex align-items-center justify-content-between cursor click_btn gap-sm-0 gap-4">
-                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white">Who is the Contract
+                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white color_change">Who is the
+                                Contract
                                 Developer?</p>
                             <span class="svg_icon">
                                 <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg" class="svg_fill">
                                     <path
                                         d="M0.938726 1.43185L9.90948 10.1765C10.067 10.3301 10.2784 10.416 10.4984 10.416C10.7185 10.416 10.9298 10.3301 11.0873 10.1765L20.0615 1.43185C20.135 1.3603 20.1934 1.27477 20.2332 1.18028C20.2731 1.0858 20.2937 0.984281 20.2937 0.881724C20.2937 0.779169 20.2731 0.677651 20.2332 0.583166C20.1934 0.488681 20.135 0.403143 20.0615 0.331599C19.9108 0.184412 19.7085 0.10201 19.4979 0.10201C19.2872 0.10201 19.0849 0.184412 18.9342 0.331599L10.4984 8.55479L2.06429 0.331599C1.91368 0.184916 1.71175 0.102834 1.50151 0.102834C1.29127 0.102834 1.08934 0.184916 0.938726 0.331599C0.865247 0.403143 0.806844 0.488681 0.766966 0.583166C0.727088 0.677651 0.706543 0.779169 0.706543 0.881724C0.706543 0.984281 0.727088 1.0858 0.766966 1.18028C0.806844 1.27477 0.865247 1.3603 0.938726 1.43185Z"
                                         fill="white" />
                                 </svg>
                             </span>
                         </div>
-                        <p class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem">
+                        <p
+                            class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem color_change_2 fs_sub_text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur
                             exercitationem officiis, quibusdam alias nihil sed in autem pariatur ex?
                         </p>
                     </div>
                     <div class="accoridon_items brdr mt-4">
                         <div class="d-flex align-items-center justify-content-between cursor click_btn gap-sm-0 gap-4">
-                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white">When is the presale and
+                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white color_change">When is
+                                the presale and
                                 launch of $CHIMPZ?</p>
                             <span class="svg_icon">
                                 <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg" class="svg_fill">
                                     <path
                                         d="M0.938726 1.43185L9.90948 10.1765C10.067 10.3301 10.2784 10.416 10.4984 10.416C10.7185 10.416 10.9298 10.3301 11.0873 10.1765L20.0615 1.43185C20.135 1.3603 20.1934 1.27477 20.2332 1.18028C20.2731 1.0858 20.2937 0.984281 20.2937 0.881724C20.2937 0.779169 20.2731 0.677651 20.2332 0.583166C20.1934 0.488681 20.135 0.403143 20.0615 0.331599C19.9108 0.184412 19.7085 0.10201 19.4979 0.10201C19.2872 0.10201 19.0849 0.184412 18.9342 0.331599L10.4984 8.55479L2.06429 0.331599C1.91368 0.184916 1.71175 0.102834 1.50151 0.102834C1.29127 0.102834 1.08934 0.184916 0.938726 0.331599C0.865247 0.403143 0.806844 0.488681 0.766966 0.583166C0.727088 0.677651 0.706543 0.779169 0.706543 0.881724C0.706543 0.984281 0.727088 1.0858 0.766966 1.18028C0.806844 1.27477 0.865247 1.3603 0.938726 1.43185Z"
                                         fill="white" />
                                 </svg>
                             </span>
                         </div>
-                        <p class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem">
+                        <p
+                            class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem color_change_2 fs_sub_text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur
                             exercitationem officiis, quibusdam alias nihil sed in autem pariatur ex?
                         </p>
                     </div>
                     <div class="accoridon_items brdr mt-4">
                         <div class="d-flex align-items-center justify-content-between cursor click_btn gap-sm-0 gap-4">
-                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white">How do I claim my
+                            <p class="fm_fira fw-500 fs-16 lh-24 m-0 fs_lh_accordion text-white color_change">How do I
+                                claim my
                                 $CHIMPZ tokens?</p>
                             <span class="svg_icon">
                                 <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg" class="svg_fill">
                                     <path
                                         d="M0.938726 1.43185L9.90948 10.1765C10.067 10.3301 10.2784 10.416 10.4984 10.416C10.7185 10.416 10.9298 10.3301 11.0873 10.1765L20.0615 1.43185C20.135 1.3603 20.1934 1.27477 20.2332 1.18028C20.2731 1.0858 20.2937 0.984281 20.2937 0.881724C20.2937 0.779169 20.2731 0.677651 20.2332 0.583166C20.1934 0.488681 20.135 0.403143 20.0615 0.331599C19.9108 0.184412 19.7085 0.10201 19.4979 0.10201C19.2872 0.10201 19.0849 0.184412 18.9342 0.331599L10.4984 8.55479L2.06429 0.331599C1.91368 0.184916 1.71175 0.102834 1.50151 0.102834C1.29127 0.102834 1.08934 0.184916 0.938726 0.331599C0.865247 0.403143 0.806844 0.488681 0.766966 0.583166C0.727088 0.677651 0.706543 0.779169 0.706543 0.881724C0.706543 0.984281 0.727088 1.0858 0.766966 1.18028C0.806844 1.27477 0.865247 1.3603 0.938726 1.43185Z"
                                         fill="white" />
                                 </svg>
                             </span>
                         </div>
-                        <p class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem">
+                        <p
+                            class="fm_fira fw-400 fs-16 lh-24 text-white opacity-75 disp_text fs_lh_accordion_lorem color_change_2 fs_sub_text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur
                             exercitationem officiis, quibusdam alias nihil sed in autem pariatur ex?
                         </p>
@@ -450,8 +517,51 @@
                 </div>
             </div>
         </section>
+
     </main>
-    <footer></footer>
+
+    <!-- footer -->
+
+    <footer class="py_footer footer_back_img position-relative -mt-2">
+        <div class="container-fluid px-sm-0 px_12px position-relative z-2">
+            <a href="#" class="d-flex align-items-center justify-content-center pt_media_footer_image">
+                <img src="./assets/images/SVG/footer_title.svg" alt="title image">
+            </a>
+            <div class="d-flex align-items-center justify-content-center my_text_footer">
+                <p class="fm_fira fw-400 fs-16 lh-24 text-white opac_70 max_w_footer text-center fs_sub_text">Lorem
+                    Ipsum is simply dummy text
+                    of the
+                    printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s,</p>
+            </div>
+            <div class="d-flex align-items-center gap_media_navItems justify-content-center pb-5">
+                <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="svg_box_nav_bar d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/discord_nav_bar.svg" alt="discord image">
+                    </a>
+                    <a href="#" class="svg_box_nav_bar d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/tele_nav_bar.svg" alt="tele image">
+                    </a>
+                    <a href="#" class="svg_box_nav_bar d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/twitter_nav_bar.svg" alt="twitter_nav_bar image">
+                    </a>
+                </div>
+            </div>
+            <div class="line"></div>
+            <p class="fm_fira fw-400 fs-16 lh-24 text-white opac_70 mb-0 text-center py-4 fs_sub_text">
+                Copyright2023/CHIMPZ</p>
+        </div>
+    </footer>
+
+    <!-- scroll to top -->
+
+    <section class="scroll_top position-fixed shadow cursor z-3">
+        <div class="scroll_box">
+            <img src="./assets/images/SVG/scroll_top_icon.svg" alt="scroll to top icon" class="w-100 h-100">
+        </div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

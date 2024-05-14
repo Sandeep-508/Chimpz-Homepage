@@ -24,6 +24,13 @@
     color: var(--text_color_team) !important;
 }
 
+.line {
+    width: 100%;
+    height: 1px;
+    background: #FF9F00;
+    opacity: 40%;
+}
+
 /* <----------------------------------------------------------- Backimages or BackColor ----------------------------------------------------------------> */
 
 .back_image_header {
@@ -48,13 +55,24 @@
     backdrop-filter: blur(3px);
 }
 
+.footer_back_img {
+    background-image: url("../images/PNG/footer_back_img.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* <----------------------------------------------------------- width and height ----------------------------------------------------------------> */
+.max_w_footer {
+    max-width: 598px;
+}
 
 .svg_box_nav_bar {
     width: 32px;
     height: 32px;
     border: 1px solid var(--color-white);
     border-radius: 50%;
+    transition: all 300ms linear;
 }
 
 .dot_roadmap {
@@ -110,16 +128,29 @@
     margin-top: 40px;
 }
 
+.my_text_footer {
+    margin-top: 55px;
+    margin-bottom: 44px;
+}
+
 .mt_media_team {
     margin-top: 40px;
+}
+
+.pt_media_footer_image {
+    padding-top: 60px;
 }
 
 .mt_media_items {
     margin-top: 32px;
 }
 
+.pb_media_text_road {
+    padding-bottom: 80px;
+}
+
 .-mt-2 {
-    margin-top: -4px;
+    margin-top: -8px;
 }
 
 .gap_media_roadmap {
@@ -157,7 +188,12 @@
     padding-bottom: 60px;
 }
 
+.padding_col {
+    padding: 32px 8px 32px 8px;
+}
+
 /* spacing between sections */
+
 .py_about {
     padding-top: 180px;
     padding-bottom: 174px;
@@ -188,16 +224,80 @@
     padding-bottom: 180px;
 }
 
+.py_faq {
+    padding-bottom: 160px;
+}
+
+
 /* <-----------------------------------------------------------btn changes ----------------------------------------------------------------> */
 
-.Btn_navBar {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    border: 1px solid transparent;
-    background: var(--yellowish_color);
-    border-radius: 36px;
+.btn {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.btn span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.btn:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.btn span:nth-child(1) {
+    --n: 1;
+}
+
+.btn span:nth-child(2) {
+    --n: 2;
+}
+
+.btn span:nth-child(3) {
+    --n: 3;
+}
+
+.btn span:nth-child(4) {
+    --n: 4;
+}
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0;
 }
 
 /* <----------------------------------------------------------- positions ----------------------------------------------------------------> */
@@ -227,7 +327,34 @@
     position: relative;
 }
 
+.footer_back_img::after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.pos_hero_img {
+    left: -51px;
+}
+
 /* <-----------------------------------------------------------  Hover Effects ----------------------------------------------------------------> */
+
+.svg_box_nav_bar:hover {
+    background: var(--yellowish_color);
+}
+
+.nav_link {
+    transition: all 300ms linear;
+}
+
+.nav_link:hover {
+    opacity: 100%;
+}
 
 /* <----------------------------------------------------------- before and after ----------------------------------------------------------------> */
 
@@ -259,6 +386,29 @@
 
 /* <----------------------------------------------------------- scroll to top ----------------------------------------------------------------> */
 
+.scroll_top,
+.scroll_box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    transition: all 300ms linear;
+}
+
+.scroll_top {
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll_box img {
+    transform: rotate(180deg);
+}
+
+.scroll_box:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 50px -3px #3B945E;
+}
+
 /* <----------------------------------------------------------- Keyframes ----------------------------------------------------------------> */
 
 /* <----------------------------------------------------------- Progress ----------------------------------------------------------------> */
@@ -287,15 +437,15 @@
 }
 
 .bordr_change {
-    border: 1px solid #00A600
+    border: 1px solid #00A600 !important;
 }
 
-.fill_change {
-    fill: #00A600;
+.fill_change path {
+    fill: #00A600 !important;
 }
 
 .text_change {
-    color: #00A600;
+    color: #00A600 !important;
 }
 
 .click_btn {
