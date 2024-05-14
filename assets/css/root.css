@@ -35,6 +35,11 @@
     --navBar_back_lg: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
     --chimp_text_color: #3B945E;
     --col_back_lg: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 85.54%, rgba(255, 255, 255, 0) 100%);
+    --sec_back_color: #030D01;
+    --roadmap_sec_color: #44C53252;
+    --roadmap_text_color: #3B945E;
+    --team_border: #FFFFFF3D;
+    --text_color_team: #5CE959;
 
 
     /* font-family */
@@ -163,6 +168,22 @@
 
 .container_diff_hero {
     max-width: 1176px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.container_partner {
+    max-width: 1001px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.container_accordion {
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 12px;
@@ -660,5 +681,19 @@ a {
 
     .btn_change {
         background: var(--border-color) !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .after_image::after {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .after_image_2::after {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }

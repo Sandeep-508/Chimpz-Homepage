@@ -48,3 +48,36 @@ menuicon.addEventListener("click", () => {
         remove_cross();
     }
 });
+
+// accoridon
+
+let accordion_item = document.querySelectorAll(".accoridon_items");
+let svg_icon = document.querySelector(".svg_icon");
+let disp_text = document.querySelector(".disp_text");
+disp_text.style.display = "flex";
+svg_icon.style.transform = "rotate(180deg)";
+
+accordion_item.forEach(otherElement => {
+    let svg_icon = otherElement.querySelector(".svg_icon");
+    let disp_text = otherElement.querySelector(".disp_text");
+    let clickBtn = otherElement.querySelector(".click_btn");
+    clickBtn.addEventListener("click", () => {
+        accordion_item.forEach(itm => {
+            if (itm !== otherElement) {
+                let svg_icon = itm.querySelector(".svg_icon");
+                let disp_text = itm.querySelector(".disp_text");
+                disp_text.style.display = "none";
+                svg_icon.style.transform = "rotate(0deg)";
+            }
+        });
+        let text_prop = window.getComputedStyle(disp_text).display;
+        if (text_prop === "none") {
+            disp_text.style.display = "flex";
+            svg_icon.style.transform = "rotate(180deg)";
+        } else {
+            disp_text.style.display = "none";
+            svg_icon.style.transform = "rotate(0deg)";
+        }
+    });
+
+});

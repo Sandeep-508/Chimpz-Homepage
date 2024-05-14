@@ -8,11 +8,34 @@
     opacity: 90%;
 }
 
+.opac_70 {
+    opacity: 70%;
+}
+
+.sec_back_clr {
+    background: var(--sec_back_color);
+}
+
+.text_roadmap_clr {
+    color: var(--roadmap_text_color);
+}
+
+.text_color_team {
+    color: var(--text_color_team) !important;
+}
+
 /* <----------------------------------------------------------- Backimages or BackColor ----------------------------------------------------------------> */
 
 .back_image_header {
     background-image: url("../images/PNG/hero_sec_back.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team_bg_img {
+    background-image: url("../images/PNG/team_bg_img.png");
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -34,14 +57,74 @@
     border-radius: 50%;
 }
 
+.dot_roadmap {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-white);
+}
+
+.team_box {
+    max-width: 657px;
+    border-radius: 16px;
+    border: 1px solid var(--team_border);
+    padding: 19px 30px 19px 20px;
+    background: #FFFFFF05;
+    backdrop-filter: blur(5px);
+}
+
+.company_box {
+    max-width: 220px;
+    padding: 13.48px 3.01px 12.51px 3.99px;
+    border-radius: 6px;
+    border: 1px solid #FFFFFF3D;
+    background: #FFFFFF0F;
+}
+
+.takenomic_box {
+    max-width: 558px;
+    padding: 34.5px 30px 34.5px 72px;
+    border-radius: 16px;
+    border: 1px solid #FFFFFF3D;
+    background: #FFFFFF05;
+}
+
 /* image width height settings */
 .wh_chimp_img {
     max-width: 530px;
     min-height: 500px;
 }
 
+.wh_dots {
+    width: 227px;
+    height: 4px;
+}
+
 /* <-----------------------------------------------------------spacings ----------------------------------------------------------------> */
 
+.gap_bet_text_img {
+    gap: 34px;
+}
+
+.mt_media_col {
+    margin-top: 40px;
+}
+
+.mt_media_team {
+    margin-top: 40px;
+}
+
+.mt_media_items {
+    margin-top: 32px;
+}
+
+.-mt-2 {
+    margin-top: -4px;
+}
+
+.gap_media_roadmap {
+    gap: 55px;
+}
 
 .gap_media_navTabs {
     gap: 46px;
@@ -53,6 +136,56 @@
 
 .gap_betw {
     gap: 60px;
+}
+
+.gap_media_roadmap_text {
+    gap: 10px;
+}
+
+.padding_box_road {
+    padding-top: 9px;
+    padding-right: 43px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.pb_media_text {
+    padding-bottom: 60px;
+}
+
+.pb_media_text_part {
+    padding-bottom: 60px;
+}
+
+/* spacing between sections */
+.py_about {
+    padding-top: 180px;
+    padding-bottom: 174px;
+}
+
+.py_roadmap {
+    padding-top: 180px;
+    padding-bottom: 149px;
+}
+
+.py_team {
+    padding-top: 31px;
+    padding-bottom: 108px;
+}
+
+.py_partner {
+    padding-top: 82px;
+    padding-bottom: 73px;
+}
+
+.py_partner {
+    padding-top: 104px;
+    padding-bottom: 180px;
+}
+
+.py_takenomics {
+    padding-top: 104px;
+    padding-bottom: 180px;
 }
 
 /* <-----------------------------------------------------------btn changes ----------------------------------------------------------------> */
@@ -75,9 +208,54 @@
     position: absolute;
 }
 
+.layer_partner_pos {
+    bottom: 0;
+    left: 0;
+}
+
+.svg_roadmap_box {
+    border: 1px solid var(--roadmap_sec_color);
+    padding: 26px;
+    border-radius: 50%;
+}
+
+.after_image {
+    position: relative;
+}
+
+.after_image_2 {
+    position: relative;
+}
+
 /* <-----------------------------------------------------------  Hover Effects ----------------------------------------------------------------> */
 
 /* <----------------------------------------------------------- before and after ----------------------------------------------------------------> */
+
+.after_image::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350.37px;
+    height: 123.23px;
+    background-image: url("../images/PNG/roadmap_after.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.after_image_2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350.37px;
+    height: 123.23px;
+    background-image: url("../images/PNG/phase_2_after_roadmap.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 /* <----------------------------------------------------------- scroll to top ----------------------------------------------------------------> */
 
@@ -90,6 +268,40 @@
 /* <----------------------------------------------------------- z-indexes ----------------------------------------------------------------> */
 
 /* <----------------------------------------------------------- Accordion ----------------------------------------------------------------> */
+
+.brdr {
+    border-bottom: 1px solid var(--light-black-clr);
+}
+
+.disp_text {
+    display: none;
+    max-width: 786px;
+}
+
+.accoridon_items {
+    background: #FFFFFF0F;
+    border: 1px solid #FFFFFFB8;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 30px;
+}
+
+.bordr_change {
+    border: 1px solid #00A600
+}
+
+.fill_change {
+    fill: #00A600;
+}
+
+.text_change {
+    color: #00A600;
+}
+
+.click_btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 /* <----------------------------------------------------------- animated menuicon ----------------------------------------------------------------> */
 
