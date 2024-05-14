@@ -667,10 +667,6 @@ a {
         width: 100%;
     }
 
-    .gap_30px {
-        gap: 30px;
-    }
-
     .max_lg_view {
         position: fixed;
         height: 100%;
@@ -715,6 +711,10 @@ a {
     .position-lg-abs {
         position: unset;
     }
+
+    .min-vh-lg-100 {
+        min-height: 100vh;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -726,6 +726,18 @@ a {
 
     .takenomic_box {
         padding: 30px 30px 30px 30px;
+    }
+
+    .gap_media_navTabs {
+        gap: 25px;
+    }
+
+    .gap_betw {
+        gap: 30px;
+    }
+
+    .gap_media_navItems {
+        gap: 15px;
     }
 
     .after_image_2::after {
