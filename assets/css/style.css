@@ -358,12 +358,6 @@ ul {
     left: -51px;
 }
 
-.pos_how_to_buy {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .pos_circle_image_1 {
     bottom: -270px;
     right: -125px;

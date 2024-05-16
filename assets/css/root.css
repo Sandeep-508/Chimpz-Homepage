@@ -1023,6 +1023,12 @@ a {
     .py_buy {
         padding-bottom: 160px;
     }
+
+    .pos_how_to_buy {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 1199.9px) {
@@ -1087,5 +1093,9 @@ a {
 
     .mt_max_xl_media {
         margin-top: 60px;
+    }
+
+    .pos_how_to_buy {
+        display: none;
     }
 }
