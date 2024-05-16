@@ -604,9 +604,9 @@ a {
     text-decoration: none !important;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .cursor {
     cursor: pointer;
