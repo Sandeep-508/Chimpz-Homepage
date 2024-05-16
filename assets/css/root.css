@@ -631,7 +631,7 @@ a {
         width: 50px;
         height: 30px;
         position: relative;
-        z-index: 5;
+        z-index: 13;
     }
 
     .menuicon span:nth-child(1) {
@@ -678,7 +678,7 @@ a {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        z-index: 5;
+        z-index: 12;
         transition: all 300ms linear;
     }
 
@@ -705,15 +705,25 @@ a {
     .max_w_sub_text {
         max-width: 700px;
     }
+
+    .wh_changes_token {
+        max-width: 100%;
+        min-height: 306px;
+    }
 }
 
 @media (min-width: 992.9px) {
     .position-lg-abs {
-        position: unset;
+        position: absolute;
     }
 
     .min-vh-lg-100 {
         min-height: 100vh;
+    }
+
+    .wh_changes_token {
+        max-width: 100%;
+        min-height: 306px;
     }
 }
 
@@ -749,6 +759,33 @@ a {
     .wh_chimp_img {
         max-width: 100%;
         min-height: 100%;
+    }
+
+    .pos_circle_image_1 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .pos_circle_image_2 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .pos_circle_image_3 {
+        width: 90px;
+        height: 90px;
+        bottom: -152px;
+        right: 290px;
+    }
+
+    .pos_circle_image_4 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .w_h_adjust_buy {
+        width: 90px;
+        height: 90px;
     }
 }
 
@@ -786,7 +823,7 @@ a {
     }
 
     .py_takenomics {
-        padding-top: 100px;
+        /* padding-top: 100px; */
         padding-bottom: 100px;
     }
 
@@ -798,6 +835,17 @@ a {
 
     .pb_media_text_road {
         padding-bottom: 60px;
+    }
+
+    .mb_media_buy_text {
+        margin-bottom: 70px;
+    }
+
+    .scroll_top,
+    .scroll_box {
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 50% !important;
     }
 }
 
@@ -887,7 +935,7 @@ a {
     }
 
     .py_takenomics {
-        padding-top: 50px;
+        /* padding-top: 50px; */
         padding-bottom: 50px;
     }
 
@@ -911,5 +959,133 @@ a {
 
     .pb_media_text {
         padding-bottom: 30px;
+    }
+
+    .mb_media_buy_text {
+        margin-bottom: 40px;
+    }
+
+
+    /* postion adjjstemnt */
+
+    .before_img::before {
+        width: 60px !important;
+        height: 76px !important;
+        left: 34px !important;
+        top: -1px !important;
+    }
+
+    .w_h_adjust_buy {
+        width: 78px !important;
+        height: auto;
+    }
+
+    .gap_media_buy {
+        gap: 30px !important;
+    }
+
+    .mt_max_xl_media {
+        margin-top: 30px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .position-xl-absolute {
+        position: absolute;
+    }
+
+    .max_w_buy {
+        max-width: 879px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .max_w_lorem_text {
+        max-width: 281px;
+        /* min-height: 175px; */
+    }
+
+    .max_w_lorem_text_2 {
+        max-width: 356px;
+        /* min-height: 175px; */
+    }
+
+    .mt_media_text_4 {
+        margin-top: 80px;
+    }
+
+    .w_xl_100 {
+        width: 100%;
+    }
+
+    .py_buy {
+        padding-bottom: 160px;
+    }
+}
+
+@media (max-width: 1199.9px) {
+    .after_img_2_buy::after {
+        display: none;
+    }
+
+    .after_img_3_buy::after {
+        display: none;
+    }
+
+    .after_img_1_buy::after {
+        display: none;
+    }
+
+    .after_img_4_buy::after {
+        display: none;
+    }
+
+    .max_w_buy {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .flex_row {
+        flex-direction: row;
+    }
+
+    .d_flex {
+        display: flex;
+    }
+
+    .max_w_lorem_text {
+        max-width: 680px;
+        /* min-height: 175px; */
+    }
+
+    .max_w_lorem_text_2 {
+        max-width: 680px;
+        /* min-height: 175px; */
+    }
+
+    .before_img::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/SVG/line_buy.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60px;
+        height: 80px;
+        left: 49px;
+        top: 4px;
+    }
+
+    .gap_media_buy {
+        gap: 40px;
+    }
+
+    .mt_max_xl_media {
+        margin-top: 60px;
     }
 }

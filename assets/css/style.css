@@ -40,6 +40,7 @@
     background-repeat: no-repeat;
 }
 
+
 .team_bg_img {
     background-image: url("../images/PNG/team_bg_img.png");
     background-size: 100% 100%;
@@ -55,11 +56,28 @@
     backdrop-filter: blur(3px);
 }
 
-.footer_back_img {
+.footer_back_img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-image: url("../images/PNG/footer_back_img.png");
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+
+.footer_back_img::before {
+    content: "";
+    position: absolute;
+    background: var(--sec_back_color);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 /* <----------------------------------------------------------- width and height ----------------------------------------------------------------> */
@@ -93,6 +111,7 @@
 
 .company_box {
     max-width: 220px;
+    min-height: 88px;
     padding: 13.48px 3.01px 12.51px 3.99px;
     border-radius: 6px;
     border: 1px solid #FFFFFF3D;
@@ -122,6 +141,14 @@
 
 .gap_bet_text_img {
     gap: 34px;
+}
+
+.mb_media_buy_text {
+    margin-bottom: 105px;
+}
+
+.mt_media_text_3 {
+    margin-top: 60px;
 }
 
 .mt_media_col {
@@ -220,14 +247,13 @@
 }
 
 .py_takenomics {
-    padding-top: 104px;
+    /* padding-top: 104px; */
     padding-bottom: 180px;
 }
 
 .py_faq {
     padding-bottom: 160px;
 }
-
 
 /* <-----------------------------------------------------------btn changes ----------------------------------------------------------------> */
 
@@ -238,7 +264,7 @@
     border: 0.3em solid var(--c);
     border-radius: 0.5em;
     width: 12em;
-    height: 3em;
+    /* height: 3em; */
     text-transform: uppercase;
     font-weight: bold;
     font-family: sans-serif;
@@ -249,7 +275,7 @@
     overflow: hidden;
     z-index: 1;
     transition: 0.5s;
-    margin: 1em;
+    /* margin: 1em; */
 }
 
 .btn span {
@@ -317,6 +343,7 @@ ul {
     border: 1px solid var(--roadmap_sec_color);
     padding: 26px;
     border-radius: 50%;
+    background: #FFFFFF14;
 }
 
 .after_image {
@@ -327,19 +354,122 @@ ul {
     position: relative;
 }
 
-.footer_back_img::after {
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, 70%);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
 .pos_hero_img {
     left: -51px;
+}
+
+.pos_how_to_buy {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pos_circle_image_1 {
+    bottom: -270px;
+    right: -125px;
+    width: 128px;
+    height: 128px;
+}
+
+.pos_circle_image_2 {
+    bottom: -270px;
+    left: -64px;
+    width: 128px;
+    height: 128px;
+}
+
+.pos_circle_image_3 {
+    bottom: -188px;
+    right: 414px;
+    width: 128px;
+    height: 128px;
+}
+
+.pos_circle_image_4 {
+    width: 128px;
+    height: 128px;
+    bottom: -141px;
+    right: 300px;
+}
+
+/* ellipse */
+
+.ellipse_1_pos_right {
+    right: 0;
+    bottom: -50%;
+}
+
+.ellipse_1_pos_right_1 {
+    right: 0;
+    top: -50%;
+}
+
+.ellipse_1_pos_left {
+    left: 0;
+    bottom: -27%;
+}
+
+.ellipse_pos_right_buy {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ellipse_pos_left_roadmap {
+    left: 0;
+    top: -45%;
+}
+
+.ellipse_pos_right_roadmap {
+    right: 0;
+    bottom: -45%;
+    z-index: 2;
+}
+
+.ellipse_pos_left_team {
+    left: 0;
+    top: -50%;
+    z-index: 2;
+}
+
+.ellipse_pos_right_partner {
+    right: 0;
+    bottom: 15%;
+}
+
+.ellipse_pos_left_partner {
+    left: 0;
+    bottom: -40%;
+}
+
+.ellipse_pos_right_token {
+    right: 0;
+    top: -50%;
+}
+
+.ellipse_pos_left_token {
+    left: 0;
+    bottom: -25%;
+}
+
+.ellipse_pos_right_faq {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.layer_token_pos {
+    bottom: 0;
+    left: 0;
+}
+
+.ellipse_pos_left_footer {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 309px;
+    height: 309px;
+    z-index: 3;
 }
 
 /* <-----------------------------------------------------------  Hover Effects ----------------------------------------------------------------> */
@@ -384,6 +514,61 @@ ul {
     background-repeat: no-repeat;
 }
 
+.after_img_2_buy::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/PNG/bandar_image_after_2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 232px;
+    bottom: -205px;
+    right: -125px;
+}
+
+.after_img_3_buy::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/PNG/bandar_image_after_3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 232px;
+    bottom: -202px;
+    right: 276px;
+}
+
+.after_img_1_buy::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/PNG/bandar_image_after_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 256px;
+    height: 175px;
+    bottom: -188px;
+    right: 471px;
+}
+
+.after_img_4_buy::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/PNG/bandar_image_after_4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 371px;
+    height: 175px;
+    bottom: -153px;
+    right: 109px;
+}
+
+
+
+
 /* <----------------------------------------------------------- scroll to top ----------------------------------------------------------------> */
 
 .scroll_top,
@@ -393,6 +578,7 @@ ul {
     border-radius: 50%;
     background-color: var(--color-white);
     transition: all 300ms linear;
+    z-index: 11;
 }
 
 .scroll_top {
@@ -416,6 +602,10 @@ ul {
 /* <----------------------------------------------------------- slider changes ----------------------------------------------------------------> */
 
 /* <----------------------------------------------------------- z-indexes ----------------------------------------------------------------> */
+
+.z-10 {
+    z-index: 10;
+}
 
 /* <----------------------------------------------------------- Accordion ----------------------------------------------------------------> */
 
