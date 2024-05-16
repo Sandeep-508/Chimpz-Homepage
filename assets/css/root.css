@@ -837,9 +837,9 @@ a {
         padding-bottom: 60px;
     }
 
-    .mb_media_buy_text {
+    /* .mb_media_buy_text {
         margin-bottom: 70px;
-    }
+    } */
 
     .scroll_top,
     .scroll_box {
@@ -961,9 +961,9 @@ a {
         padding-bottom: 30px;
     }
 
-    .mb_media_buy_text {
+    /* .mb_media_buy_text {
         margin-bottom: 40px;
-    }
+    } */
 
 
     /* postion adjjstemnt */
@@ -1028,6 +1028,10 @@ a {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .d_min_xl_none {
+        display: none !important;
     }
 }
 
@@ -1097,5 +1101,9 @@ a {
 
     .pos_how_to_buy {
         display: none;
+    }
+
+    .mb_media_buy_text {
+        margin-bottom: 0;
     }
 }

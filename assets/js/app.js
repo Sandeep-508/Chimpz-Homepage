@@ -128,3 +128,24 @@ window.addEventListener("scroll", () => {
         });
     });
 });
+
+
+// preloader
+
+let preloader = document.querySelector(".preloader");
+body.style.overflow = "hidden";
+setTimeout(() => {
+    preloader.classList.add("-top-105");
+    body.style.overflow = "auto";
+}, 2000);
+
+// comeback notification
+
+let title = document.title;
+window.addEventListener("blur", () => {
+    document.title = "Come back 🤞";
+});
+
+window.addEventListener("focus", () => {
+    document.title = title;
+});
