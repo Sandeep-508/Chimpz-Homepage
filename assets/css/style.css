@@ -32,6 +32,12 @@
 }
 
 /* <----------------------------------------------------------- Backimages or BackColor ----------------------------------------------------------------> */
+.sec_back_img_partner {
+    background-image: url("../images/PNG/partner-back-img.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .back_image_header {
     background-image: url("../images/PNG/hero_sec_back.png");
@@ -335,6 +341,17 @@ ul {
     position: absolute;
 }
 
+.pos-bottom-img-buy {
+    bottom: -40%;
+    left: 0;
+    z-index: 2;
+}
+
+.layer_partner_pos_top {
+    top: 0;
+    left: 0;
+}
+
 .layer_partner_pos {
     bottom: 0;
     left: 0;
@@ -431,6 +448,7 @@ ul {
 .ellipse_pos_right_partner {
     right: 0;
     bottom: 15%;
+    z-index: 4;     
 }
 
 .ellipse_pos_left_partner {
