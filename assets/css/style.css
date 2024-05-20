@@ -396,7 +396,8 @@ ul {
 
 .ellipse_1_pos_right_1 {
     right: 0;
-    top: -50%;
+    top: 65%;
+    z-index: 12;
 }
 
 .ellipse_1_pos_left {
@@ -573,7 +574,7 @@ ul {
     border-radius: 50%;
     background-color: var(--color-white);
     transition: all 300ms linear;
-    z-index: 11;
+    z-index: 13;
 }
 
 .scroll_top {
